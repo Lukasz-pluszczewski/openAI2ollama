@@ -1,0 +1,25 @@
+{
+  "name": "llm-proxy",
+  "version": "1.0.0",
+  "description": "OpenAI generate to Ollama proxy",
+  "repository": "https://github.com/Lukasz-pluszczewski/openAI2ollama",
+  "main": "src",
+  "scripts": {
+    "dev": "NODE_PATH=dist ENV=dev tsnd -r dotenv/config src/index.ts",
+    "start": "NODE_PATH=dist ENV=production ts-node -r dotenv/config src/index.ts"
+  },
+  "author": "Łukasz Pluszczewski",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "dotenv": "^16.1.4"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.9",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  }
+}

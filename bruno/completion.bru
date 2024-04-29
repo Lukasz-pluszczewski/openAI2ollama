@@ -1,0 +1,17 @@
+meta {
+  name: completion
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL}}/v1/completions
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "prompt": "<PRE> // function that load file contents\n <SUF>\n <MID>"
+  }
+}
